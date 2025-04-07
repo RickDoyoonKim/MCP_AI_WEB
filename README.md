@@ -1,29 +1,30 @@
+
 # Personal Portfolio Website
 
-이 프로젝트는 Next.js와 React를 사용하여 구축된 개인 포트폴리오 웹사이트입니다.
+This project is a personal portfolio website built using Next.js and React.
 
-## 기능
+## Features
 
-- 동적 페이지 전환
-- 네트워크 배경 애니메이션
-- 반응형 디자인
-- 모던한 UI/UX
+- Dynamic page transitions
+- Network background animations
+- Responsive design
+- Modern UI/UX
 
-## 기술 스택
+## Tech stack
 
 - Next.js
 - React
 - TypeScript
 - Tailwind CSS
-- CSS 애니메이션
+- CSS animations
 
-## 실행 방법
+## How to run
 
 ```bash
 npm install
 npm run dev
 ```
 
-## 라이센스
+## License
 
 MIT
