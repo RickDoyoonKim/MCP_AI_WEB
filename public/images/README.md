@@ -1,21 +1,21 @@
-# 로컬 이미지 폴더
+# Local Images Folder
 
-이 폴더는 로컬에서 테스트하기 위한 이미지 파일들을 저장하는 폴더입니다.
-Vercel 배포시 문제가 발생할 경우, 이 폴더의 이미지를 사용할 수 있습니다.
+This folder stores image files for local testing purposes.
+These images can be used as fallbacks when issues occur during Vercel deployment.
 
-## 사용 방법
+## Usage
 
-ImageComponent에서 이미지 경로를 변경하여 사용할 수 있습니다:
+You can use these images by changing the image path in the ImageComponent:
 
 ```jsx
-// GitHub RAW URL 대신 로컬 이미지 사용
+// Using local images instead of GitHub RAW URL
 <ImageComponent
   src="/images/anime-profile.png"
   alt="Profile"
 />
 ```
 
-## 주의사항
+## Important Notes
 
-- 반드시 `/images/파일명.확장자` 형식으로 경로 지정
-- 이미지 파일은 이 폴더에 직접 저장할 것
+- Always specify paths in the format `/images/filename.extension`
+- Store image files directly in this folder
