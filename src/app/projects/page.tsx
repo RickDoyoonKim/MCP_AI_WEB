@@ -12,7 +12,7 @@ const projects = [
     technologies: ["Next.js", "React", "TypeScript", "Tailwind CSS", "CSS Animation"],
     demoLink: "https://mcp-ai-web.vercel.app/",
     sourceLink: "https://github.com/RickDoyoonKim/MCP_AI_WEB",
-    image: "https://res.cloudinary.com/dfg7qr13a/image/upload/v1/portfolio-images/project-1" // Cloudinary URL
+    image: "https://res.cloudinary.com/dfg7qr13a/image/upload/v1744320356/project-1_vb6agt.png" // 정확한 Cloudinary URL
   }
   // ... other projects can be added here
 ]
