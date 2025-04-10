@@ -1,6 +1,6 @@
 'use client'
 
-import Image from 'next/image'
+import ImageComponent from './components/ImageComponent'
 
 export default function Home() {
   return (
@@ -34,13 +34,9 @@ export default function Home() {
             </div>
           </div>
           <div className="relative min-h-[600px] rounded-2xl overflow-hidden glass-card">
-            <Image
+            <ImageComponent
               src="https://raw.githubusercontent.com/RickDoyoonKim/MCP_AI_WEB/main/images/anime-profile.png"
               alt="Profile"
-              fill
-              className="object-cover"
-              priority
-              unoptimized={true}
               style={{ objectPosition: 'center top' }}
             />
           </div>
