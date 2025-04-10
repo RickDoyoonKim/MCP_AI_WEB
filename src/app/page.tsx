@@ -35,7 +35,7 @@ export default function Home() {
           </div>
           <div className="relative min-h-[600px] rounded-2xl overflow-hidden glass-card">
             <ImageFallback
-              src="https://raw.githubusercontent.com/RickDoyoonKim/MCP_AI_WEB/main/images/anime-profile.png"
+              src="https://i.imgur.com/OB0y6MR.jpg"
               fallbackSrc="/images/anime-profile.png"
               alt="Profile"
               style={{ objectPosition: 'center top' }}
