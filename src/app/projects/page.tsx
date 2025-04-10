@@ -1,7 +1,9 @@
 'use client'
 
 import Image from 'next/image'
+import { useState } from 'react'
 
+// Cloudinary에 이미 업로드된 이미지 URL 사용
 const projects = [
   {
     id: 1,
@@ -10,7 +12,7 @@ const projects = [
     technologies: ["Next.js", "React", "TypeScript", "Tailwind CSS", "CSS Animation"],
     demoLink: "https://mcp-ai-web.vercel.app/",
     sourceLink: "https://github.com/RickDoyoonKim/MCP_AI_WEB",
-    image: "https://raw.githubusercontent.com/RickDoyoonKim/MCP_AI_WEB/main/public/project-1.png"
+    image: "https://res.cloudinary.com/dfg7qr13a/image/upload/v1/portfolio-images/project-1" // Cloudinary URL
   }
   // ... other projects can be added here
 ]
