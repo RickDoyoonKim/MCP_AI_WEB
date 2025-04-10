@@ -11,7 +11,7 @@ const projects = [
     technologies: ["Next.js", "React", "TypeScript", "Tailwind CSS", "CSS Animation"],
     demoLink: "https://mcp-ai-web.vercel.app/",
     sourceLink: "https://github.com/RickDoyoonKim/MCP_AI_WEB",
-    image: "https://i.imgur.com/SU60KQu.jpg",
+    image: "https://i.imgur.com/qlDNXLh.png",
     fallbackImage: "/images/project-1.png"
   }
   // ... other projects can be added here
