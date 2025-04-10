@@ -1,7 +1,6 @@
 'use client'
 
-import Image from 'next/image'
-import { useState } from 'react'
+import ImageComponent from '../components/ImageComponent'
 
 const projects = [
   {
@@ -27,12 +26,9 @@ export default function Projects() {
           {projects.map((project) => (
             <div key={project.id} className="glass-card group hover:scale-105 transition-all duration-300">
               <div className="aspect-video relative overflow-hidden rounded-t-xl">
-                <Image
+                <ImageComponent
                   src={project.image}
                   alt={project.title}
-                  fill
-                  className="object-cover"
-                  unoptimized={true}
                 />
               </div>
               <div className="p-6">
