@@ -1,6 +1,6 @@
 'use client'
 
-import ImageComponent from '../components/ImageComponent'
+import ImageFallback from '../components/ImageFallback'
 
 const projects = [
   {
@@ -10,7 +10,8 @@ const projects = [
     technologies: ["Next.js", "React", "TypeScript", "Tailwind CSS", "CSS Animation"],
     demoLink: "https://mcp-ai-web.vercel.app/",
     sourceLink: "https://github.com/RickDoyoonKim/MCP_AI_WEB",
-    image: "https://raw.githubusercontent.com/RickDoyoonKim/MCP_AI_WEB/main/images/project-1.png"
+    image: "https://raw.githubusercontent.com/RickDoyoonKim/MCP_AI_WEB/main/images/project-1.png",
+    localImage: "/images/project-1.png"
   }
   // ... other projects can be added here
 ]
@@ -26,8 +27,9 @@ export default function Projects() {
           {projects.map((project) => (
             <div key={project.id} className="glass-card group hover:scale-105 transition-all duration-300">
               <div className="aspect-video relative overflow-hidden rounded-t-xl">
-                <ImageComponent
+                <ImageFallback
                   src={project.image}
+                  fallbackSrc={project.localImage}
                   alt={project.title}
                 />
               </div>
