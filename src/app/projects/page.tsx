@@ -2,6 +2,7 @@
 
 import ImageFallback from '../components/ImageFallback'
 
+// Project data with Imgur image URLs
 const projects = [
   {
     id: 1,
@@ -10,8 +11,8 @@ const projects = [
     technologies: ["Next.js", "React", "TypeScript", "Tailwind CSS", "CSS Animation"],
     demoLink: "https://mcp-ai-web.vercel.app/",
     sourceLink: "https://github.com/RickDoyoonKim/MCP_AI_WEB",
-    image: "https://raw.githubusercontent.com/RickDoyoonKim/MCP_AI_WEB/main/images/project-1.png",
-    localImage: "/images/project-1.png"
+    image: "https://i.imgur.com/SU60KQu.jpg",
+    fallbackImage: "/images/project-1.png"
   }
   // ... other projects can be added here
 ]
@@ -29,8 +30,9 @@ export default function Projects() {
               <div className="aspect-video relative overflow-hidden rounded-t-xl">
                 <ImageFallback
                   src={project.image}
-                  fallbackSrc={project.localImage}
+                  fallbackSrc={project.fallbackImage}
                   alt={project.title}
+                  style={{ objectPosition: 'center top' }}
                 />
               </div>
               <div className="p-6">
