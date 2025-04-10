@@ -10,7 +10,7 @@ const projects = [
     technologies: ["Next.js", "React", "TypeScript", "Tailwind CSS", "CSS Animation"],
     demoLink: "http://localhost:3000",
     sourceLink: "#",
-    image: "/project-1.jpg"
+    image: "/project-1.png"
   }
   // ... other projects can be added here
 ]
@@ -31,6 +31,7 @@ export default function Projects() {
                   alt={project.title}
                   fill
                   className="object-cover"
+                  unoptimized={true}
                 />
               </div>
               <div className="p-6">
