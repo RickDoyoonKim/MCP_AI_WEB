@@ -35,7 +35,7 @@ export default function Home() {
           </div>
           <div className="relative min-h-[600px] rounded-2xl overflow-hidden glass-card">
             <Image
-              src="/anime-profile.png"
+              src="https://raw.githubusercontent.com/RickDoyoonKim/MCP_AI_WEB/main/public/anime-profile.png"
               alt="Profile"
               fill
               className="object-cover"
