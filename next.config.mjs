@@ -7,8 +7,12 @@ const nextConfig = {
         protocol: "https",
         hostname: "**",
       },
+      {
+        protocol: "https",
+        hostname: "raw.githubusercontent.com",
+      },
     ],
-    domains: ["vercel.app"],
+    domains: ["vercel.app", "raw.githubusercontent.com"],
   },
   output: 'standalone',
 };
