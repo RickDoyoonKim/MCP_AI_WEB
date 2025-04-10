@@ -1,6 +1,6 @@
 'use client'
 
-import ImageComponent from './components/ImageComponent'
+import ImageFallback from './components/ImageFallback'
 
 export default function Home() {
   return (
@@ -34,8 +34,9 @@ export default function Home() {
             </div>
           </div>
           <div className="relative min-h-[600px] rounded-2xl overflow-hidden glass-card">
-            <ImageComponent
+            <ImageFallback
               src="https://raw.githubusercontent.com/RickDoyoonKim/MCP_AI_WEB/main/images/anime-profile.png"
+              fallbackSrc="/images/anime-profile.png"
               alt="Profile"
               style={{ objectPosition: 'center top' }}
             />
