@@ -9,6 +9,7 @@ This project is a personal portfolio website built using Next.js and React.
 - Network background animations
 - Responsive design
 - Modern UI/UX
+- Image support through public folder
 
 ## Tech stack
 
@@ -24,6 +25,12 @@ This project is a personal portfolio website built using Next.js and React.
 npm install
 npm run dev
 ```
+
+## Recent Updates
+
+- Added public folder with image assets
+- Optimized image rendering with unoptimized Next.js image configuration
+- Fixed image display issues throughout the website
 
 ## License
 
