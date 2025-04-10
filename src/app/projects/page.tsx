@@ -8,9 +8,9 @@ const projects = [
     title: "Vibe Coding Webpage",
     description: "A modern, responsive personal portfolio website built with Next.js and React. Features include dynamic page transitions, interactive network background animation, and a clean, minimalist design. The site showcases professional experience and projects while maintaining optimal performance and accessibility.",
     technologies: ["Next.js", "React", "TypeScript", "Tailwind CSS", "CSS Animation"],
-    demoLink: "http://localhost:3000",
-    sourceLink: "#",
-    image: "/project-1.png"
+    demoLink: "https://mcp-ai-web.vercel.app/",
+    sourceLink: "https://github.com/RickDoyoonKim/MCP_AI_WEB",
+    image: "https://raw.githubusercontent.com/RickDoyoonKim/MCP_AI_WEB/main/public/project-1.png"
   }
   // ... other projects can be added here
 ]
