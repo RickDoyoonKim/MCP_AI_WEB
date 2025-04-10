@@ -1,7 +1,6 @@
 'use client'
 
-import React from 'react'
-import useImageLoader from '../hooks/useImageLoader'
+import React, { useState } from 'react'
 
 interface ImageFallbackProps {
   src: string
@@ -11,7 +10,7 @@ interface ImageFallbackProps {
   style?: React.CSSProperties
 }
 
-// 향상된 이미지 폴백 컴포넌트 - 커스텀 훅 사용
+// Image component with fallback support
 const ImageFallback: React.FC<ImageFallbackProps> = ({
   src,
   fallbackSrc,
@@ -19,24 +18,24 @@ const ImageFallback: React.FC<ImageFallbackProps> = ({
   className = '',
   style = {}
 }) => {
-  // 커스텀 훅을 사용하여 이미지 로딩 상태 관리
-  const { imgSrc, isLoading, handleError } = useImageLoader({
-    primarySrc: src,
-    fallbackSrc: fallbackSrc
-  })
+  const [imgSrc, setImgSrc] = useState(src)
+  const [hasError, setHasError] = useState(false)
+
+  // Handle image load error by switching to fallback image
+  const handleError = () => {
+    if (!hasError) {
+      setImgSrc(fallbackSrc)
+      setHasError(true)
+    }
+  }
 
   return (
     <div className="relative w-full h-full">
-      {isLoading && (
-        <div className="absolute inset-0 flex items-center justify-center bg-gray-900/30">
-          <div className="animate-pulse">이미지 로딩 중...</div>
-        </div>
-      )}
       <img
         src={imgSrc}
         alt={alt}
         onError={handleError}
-        className={`w-full h-full object-cover ${isLoading ? 'opacity-0' : 'opacity-100'} transition-opacity duration-300 ${className}`}
+        className={`w-full h-full object-cover ${className}`}
         style={style}
       />
     </div>
