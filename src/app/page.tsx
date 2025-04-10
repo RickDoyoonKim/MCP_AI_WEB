@@ -1,6 +1,6 @@
 'use client'
 
-import ImageFallback from './components/ImageFallback'
+import ImageFallback from '@/app/components/ImageFallback'
 
 export default function Home() {
   return (
