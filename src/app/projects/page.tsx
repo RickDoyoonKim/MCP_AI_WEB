@@ -2,7 +2,7 @@
 
 import ImageFallback from '../components/ImageFallback'
 
-// Project data with Imgur image URLs
+// Project data with image URLs and links
 const projects = [
   {
     id: 1,
@@ -13,8 +13,16 @@ const projects = [
     sourceLink: "https://github.com/RickDoyoonKim/MCP_AI_WEB",
     image: "https://i.imgur.com/qlDNXLh.png",
     fallbackImage: "/images/project-1.png"
+  },
+  {
+    id: 2,
+    title: "News Summary Service",
+    description: "AI-powered web application that automatically summarizes web content from URLs. Features include content extraction, GPT-based summarization, keyword identification, and local storage for summary history.",
+    technologies: ["React", "TypeScript", "Tailwind CSS", "OpenAI GPT", "Zustand"],
+    sourceLink: "https://github.com/RickDoyoonKim/news-summary-app",
+    image: "https://i.imgur.com/vYVzZKe.png",
+    fallbackImage: "/images/project-2.png"
   }
-  // ... other projects can be added here
 ]
 
 export default function Projects() {
@@ -48,7 +56,9 @@ export default function Projects() {
                   ))}
                 </div>
                 <div className="flex gap-3">
-                  <a href={project.demoLink} target="_blank" rel="noopener noreferrer" className="nav-button text-sm">View Demo</a>
+                  {project.demoLink && (
+                    <a href={project.demoLink} target="_blank" rel="noopener noreferrer" className="nav-button text-sm">View Demo</a>
+                  )}
                   <a href={project.sourceLink} target="_blank" rel="noopener noreferrer" className="nav-link text-sm">Source Code</a>
                 </div>
               </div>
