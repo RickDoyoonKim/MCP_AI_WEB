@@ -140,6 +140,16 @@ h1, h2, h3, h4, h5, h6 {
   z-index: 1;
 }
 
+/* Mobile optimizations for network nodes */
+@media (max-width: 640px) {
+  .network-node {
+    width: 3px;
+    height: 3px;
+    background: rgba(255, 255, 255, 0.5);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+  }
+}
+
 @keyframes float-network {
   0% {
     transform: translate(0, 0);
@@ -158,6 +168,21 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
+/* Simplified animation for mobile to reduce CPU load */
+@media (max-width: 640px) {
+  @keyframes float-network {
+    0% {
+      transform: translate(0, 0);
+    }
+    50% {
+      transform: translate(var(--move-x), var(--move-y));
+    }
+    100% {
+      transform: translate(0, 0);
+    }
+  }
+}
+
 .network-line {
   position: absolute;
   height: 2px;
@@ -165,6 +190,15 @@ h1, h2, h3, h4, h5, h6 {
   transform-origin: left center;
   pointer-events: none;
   z-index: 1;
+}
+
+/* Thinner, more subtle lines for mobile */
+@media (max-width: 640px) {
+  .network-line {
+    height: 1px;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+    opacity: 0.5;
+  }
 }
 
 /* Content Positioning */
