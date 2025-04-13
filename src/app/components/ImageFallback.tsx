@@ -86,7 +86,7 @@ const ImageFallback: React.FC<ImageFallbackProps> = ({
     <div className="relative w-full h-full overflow-hidden">
       {/* Skeleton loader shown while loading */}
       {isLoading && (
-        <div className="absolute inset-0 bg-gray-200 animate-pulse" />
+        <div className="absolute inset-0 bg-gray-800 animate-pulse" />
       )}
       
       {/* Image with fixed aspect ratio container */}
@@ -95,13 +95,13 @@ const ImageFallback: React.FC<ImageFallbackProps> = ({
           src={imgSrc}
           alt={alt}
           onError={handleError}
-          className={`w-full h-full object-cover transition-opacity duration-300 ${isLoading ? 'opacity-0' : 'opacity-100'} ${hasError && !fallbackSrc ? 'bg-gray-300' : ''} ${className}`}
-          style={style}
+          className={`w-full h-full object-cover transition-opacity duration-300 ${isLoading ? 'opacity-0' : 'opacity-100'} ${hasError && !fallbackSrc ? 'bg-gray-800' : ''} ${className}`}
+          style={{ ...style, backgroundColor: 'rgba(10, 16, 34, 0.8)' }}
           loading={priority ? 'eager' : 'lazy'}
         />
       ) : hasError && !fallbackSrc ? (
-        <div className="w-full h-full flex items-center justify-center bg-gray-300">
-          <span className="text-gray-500">{alt}</span>
+        <div className="w-full h-full flex items-center justify-center bg-gray-800">
+          <span className="text-gray-300">{alt}</span>
         </div>
       ) : null}
     </div>
