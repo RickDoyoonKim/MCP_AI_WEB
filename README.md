@@ -1,73 +1,43 @@
-# MCP AI Web Portfolio
+# Portfolio Website
 
-A modern, responsive personal portfolio website built with Next.js and React. This project showcases professional experience and projects with a clean, minimalist design.
+A personal portfolio website built with Next.js and React, featuring a responsive design, dynamic components, and interactive background animations.
 
 ## Features
 
-- Modern UI with glass morphism design elements
-- Responsive layout for all device sizes
-- Dynamic page transitions and animations
-- Image fallback system for reliable asset loading
-- Optimized for performance and accessibility
+- Responsive layout optimized for all device sizes
+- Glass morphism UI components
+- Interactive network background animation with mobile optimizations
+- Advanced image fallback system for reliable content loading
+- Performance monitoring tools for development (press 'p' to toggle)
+- Network debugging tools for animation optimization (press 'n' to toggle)
+
+## Recent Updates
+
+- **Mobile Flickering Fix**: Resolved screen flickering issues on mobile devices
+- **Performance Improvements**: Reduced CPU/GPU usage on mobile devices
+- **Code Refactoring**: Improved codebase maintainability through component separation
+- **Development Tools**: Added performance monitoring for easier debugging
 
 ## Tech Stack
 
-- **Framework**: Next.js 14 with App Router
-- **Language**: TypeScript
-- **Styling**: Tailwind CSS
-- **Deployment**: Vercel
+- **Next.js 14** with App Router
+- **React** with functional components and hooks
+- **TypeScript** for type safety
+- **Tailwind CSS** for responsive styling
 
-## Project Structure
+## Getting Started
 
-```
-/src
-  /app
-    /components      # Reusable UI components
-    /hooks           # Custom React hooks
-    /projects        # Projects page
-    layout.tsx       # Root layout with navigation
-    page.tsx         # Home page
-/public
-  /images            # Local backup images
-/images              # GitHub-hosted images (main source)
-```
-
-## Image Loading Strategy
-
-This project implements a dual-source image loading strategy:
-
-1. **Primary Source**: GitHub-hosted images via raw.githubusercontent.com
-2. **Fallback Source**: Local images in the public folder
-
-The `ImageFallback` component and `useImageLoader` hook work together to:
-- Attempt loading the primary image source first
-- Automatically fall back to the local version if the primary source fails
-- Provide a smooth loading experience with loading indicators
-
-## Development
-
-1. Clone the repository:
 ```bash
-git clone https://github.com/RickDoyoonKim/MCP_AI_WEB.git
-cd MCP_AI_WEB
-```
-
-2. Install dependencies:
-```bash
+# Install dependencies
 npm install
-```
 
-3. Run the development server:
-```bash
+# Run development server
 npm run dev
 ```
 
-4. Open [http://localhost:3000](http://localhost:3000) in your browser.
+## Structure
 
-## Deployment
-
-This project is configured for deployment on Vercel. The `next.config.mjs` file includes settings for image optimization and domain configuration necessary for proper image loading.
-
-## License
-
-MIT
+- `src/app/components` - Reusable UI components
+- `src/app/projects` - Projects showcase page
+- `src/app/page.tsx` - Home/About page
+- `src/app/layout.tsx` - Root layout with global components
