@@ -68,7 +68,7 @@ const ImageFallback: React.FC<ImageFallbackProps> = ({
     }
     
     return () => {
-      // Cleanup
+      // Cleanup event listeners
       img.onload = null
       img.onerror = null
     }
