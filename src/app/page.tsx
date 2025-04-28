@@ -26,7 +26,7 @@ export default function Home() {
                   'MySQL', 'Oracle', 'AWS',
                   'Legacy System Modernization', 'TypeScript', 'React'
                 ].map((skill) => (
-                  <span key={skill} className="px-4 py-2 rounded-full text-sm bg-white/5 border border-white/10 hover:border-amber-300/50 transition-colors">
+                  <span key={skill} className="px-4 py-2 rounded-full text-sm bg-[#162040] text-gray-200 border border-white/20 hover:border-amber-300/50 transition-colors">
                     {skill}
                   </span>
                 ))}
@@ -39,6 +39,7 @@ export default function Home() {
               fallbackSrc="/images/anime-profile.png"
               alt="Profile"
               style={{ objectPosition: 'center top' }}
+              priority={true}
             />
           </div>
         </div>
