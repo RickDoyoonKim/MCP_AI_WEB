@@ -28,7 +28,7 @@ export default function Header() {
            aria-label="GitHub Profile">
           <FaGithub />
         </a>
-        <a href="https://www.linkedin.com/in/do-yoon-kim-040333133/" 
+        <a href="https://www.linkedin.com/in/rdk871023/" 
            className="text-2xl text-white/80 hover:text-amber-300 transition-colors duration-200"
            target="_blank" 
            rel="noopener noreferrer"
